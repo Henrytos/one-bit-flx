@@ -12,3 +12,5 @@
 	modelagen de dados com relação de tabelas 
 	https://www.dbdesigner.net/
 	
+## Visão Geral da API (routes)
+	criação das rotas e pensando no restfull (insonia e postman) 
