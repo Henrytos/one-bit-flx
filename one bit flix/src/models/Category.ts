@@ -30,7 +30,6 @@ export const Category = sequelize.define<CategoryInstance, Category>(
     },
     position: {
       allowNull: false,
-      unique: true,
       type: DataTypes.INTEGER,
     },
   }
