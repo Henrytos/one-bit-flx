@@ -1,5 +1,5 @@
 import express from "express";
-import { database } from "./database";
+import { sequelize } from "./database";
 import { adminJs, adminJsRouter } from "./adminjs";
 
 const app = express();
@@ -11,7 +11,7 @@ app.use(express.static("public"));
 app.use(adminJs.options.rootPath, adminJsRouter);
 
 app.listen(PORT, () => {
-  database.authenticate().then(() => {
+  sequelize.authenticate().then(() => {
     console.log("Connection has been established successfully.");
   });
 
