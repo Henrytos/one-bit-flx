@@ -33,4 +33,5 @@ export const adminJs = new AdminJS({
     },
   },
 });
+
 export const adminJsRouter = AdminJSExpress.buildRouter(adminJs);
